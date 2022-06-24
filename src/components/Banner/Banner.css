@@ -1,0 +1,98 @@
+.banner__main__parent {
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: auto;
+    padding-top: 5rem;
+}
+
+.banner__box {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+
+.banner__box__item {
+    width: 34%;
+    height: 400px;
+    /* border: 1px solid blue; */
+    padding: 2rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.banner__box__item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .4;
+}
+
+.banner__box__item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .banner__box__item:nth-child(1) {
+    background-image: url('../../assets/workout.jpeg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+} */
+
+
+.banner__box__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: absolute;
+    /* border: 1px solid white; */
+    width: 80%;
+    margin: auto;
+    z-index: 20;
+    /* top: 0px; */
+}
+
+.banner__box__icon {
+    /* display: none; */
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.banner__box__item:hover {
+    cursor: pointer;
+}
+
+.banner__box__item:hover .banner__box__content>.banner__box__icon {
+    /* display: block; */
+    opacity: 1;
+    /* transition: all .3s ease; */
+}
+
+
+
+
+.banner__box__item:nth-child(1):hover {
+    width: 90%;
+}
+
+.banner__box__item:nth-child(2):hover {
+    width: 100%;
+}
+
+.banner__box__item:nth-child(3):hover {
+    width: 90%;
+}
